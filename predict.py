@@ -1,10 +1,9 @@
 """This create prediction page"""
 
-# Import necessary module
 from math import sqrt
 import streamlit as st
 from sklearn.model_selection import train_test_split
-from sklearn.linear_model import LogisticRegression
+from sklearn.linear_model import LinearRegression
 from sklearn.metrics import r2_score, mean_absolute_error, mean_squared_log_error, mean_squared_error
 
 def app(df):
@@ -65,7 +64,7 @@ def predict(df, feature_list):
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
 
     # Create the regression model
-    model = LogisticRegression()
+    model = LinearRegression()
     model.fit(X_train, y_train)
 
     # Store score and predicted price in a variable.
