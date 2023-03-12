@@ -27,6 +27,7 @@ pages_dict = {
                 "View Data": data, 
                 "Visualise Data": plots, 
                 "Predict": predict,
+                "Predict_1": predit_1,
                 "About me": about
             }
 
