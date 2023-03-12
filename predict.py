@@ -7,9 +7,7 @@ from sklearn.linear_model import Lasso
 from sklearn.metrics import r2_score, mean_absolute_error, mean_squared_log_error, mean_squared_error
 
 def app(df):
-    # Use markdown to give title
-    st.markdown("<p style='color:yellow; font-size: 30px'>This app uses <b>Lasso regression</b> to predict the price of a car based on your inputs.</p>", unsafe_allow_html=True)
-
+  
     # Create a section for user to input data.
     st.header("Select Values:")
     
