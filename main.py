@@ -35,7 +35,7 @@ df = load_data()
 
 # Create navbar in sidebar.
 st.sidebar.title("Navigation")
-user_choice = st.sidebar.radio('Go to', ("Home", "View Data", "Visualise Data", "Predict", "About me"))
+user_choice = st.sidebar.radio('Go to', ("Home", "View Data", "Visualise Data", "Predict", "Predict_1", "About me"))
 
 # Open the page selected by the user.
 if (user_choice == "Home" or user_choice == "About me"):
